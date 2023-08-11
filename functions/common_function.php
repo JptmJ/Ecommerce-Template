@@ -1,5 +1,5 @@
 <!-- Connection File -->
-<?php include("./include/connect.php"); ?>
+<?php include('./include/connect.php'); ?>
 
 <?php
 
@@ -204,16 +204,16 @@ function search()
                 $product_image1 = $row['product_image1'];
                 $product_price = $row['product_price'];
                 echo "<div class='col-md-4 pb-5'>
-                    <div class='card' style='height: 500px !important;'>
-                        <img src='admin/product_images/$product_image1' height='250' class='card-img-top object-fit-contain p-4' alt='$product_title Image'>
-                        <div class='card-body'>
-                            <h5 class='card-title'>$product_title</h5>
-                            <p style='height:100px; overflow:overlay; align-items:center; display:flex;' class='card-text m-2'>$product_description</p>
-                            <a href='#' class='btn btn-dark'>Add To Cart</a>
-                            <a href='#' class='btn btn-dark'>View More</a>
+                        <div class='card' style='height: 500px !important;'>
+                            <img src='admin/product_images/$product_image1' height='250' class='card-img-top object-fit-contain p-4' alt='$product_title Image'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>$product_title</h5>
+                                <p style='height:100px; overflow:overlay; align-items:center; display:flex;' class='card-text m-2'>$product_description</p>
+                                <a href='#' class='btn btn-dark'>Add To Cart</a>
+                                <a href='#' class='btn btn-dark'>View More</a>
+                            </div>
                         </div>
-                    </div>
-                </div>";
+                    </div>";
             }
         }
     }
